@@ -1,0 +1,71 @@
+.profile-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.profile-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-table td:first-child {
+  font-weight: bold;
+  width: 120px;
+}
+
+.profile-table input[type="text"],
+.profile-table input[type="email"],
+.profile-table input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.profile-table textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 150px; /* Adjust the height as needed */
+  resize: horizontal;
+}
+
+.profile-table input[type="radio"] {
+  margin-right: 10px;
+}
+
+.profile-form button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-form button[type="submit"]:hover {
+  background-color: #45a049;
+}

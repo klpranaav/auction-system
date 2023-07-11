@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.cl1 {
+  background-color: rgba(30, 30, 30, 0.8); 
+  color: white;
+  text-align: center;
+  font-size: larger;
+  z-index: 1; 
+  position: absolute; 
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+
+.dummy {
+  margin: 0;
+  bottom: 0;
+}
+.footer {
+  top: 0;
+  margin: 0;
+}
+.bg-image {
+    filter: blur(4px);
+    left: 0;
+    right: 0;
+    top:10%;
+    margin: 0;
+}
+

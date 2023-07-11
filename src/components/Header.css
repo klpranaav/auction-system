@@ -1,0 +1,7 @@
+.custom-dropdown-menu {
+  position: absolute;
+  right: 0;
+  left: auto;
+  min-width: 10rem;
+  margin-top: 0.5rem;
+}
