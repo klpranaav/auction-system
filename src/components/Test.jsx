@@ -6,7 +6,7 @@ export const Test = () => {
   const [resData, setResData] = useState([]);
 
   useEffect(() => {
-    const url = "https://auction-backed.vercel.app/cart/";
+    const url = "https://server3-rho.vercel.app/cart/";
     Axios.get(url)
       .then((res) => {
         if (res.status === 200) {

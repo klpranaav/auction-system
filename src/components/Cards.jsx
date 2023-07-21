@@ -15,7 +15,7 @@ export default function Cards()
     const {email} = useParams();
     const GetAuction = async()=>{
 
-        const url = "https://auction-backed.vercel.app/backend/getauc/";
+        const url = "https://server3-rho.vercel.app/backend/getauc/";
 
         Axios.get(url)
         .then((res)=>{
@@ -46,7 +46,7 @@ export default function Cards()
     const Card_ele = resData.map((data,ind)=>{
 
         
-        return data.status!=='Complete' && <a href={`/card-det/${data._id}/${email}`}><Card key={data._id} id={data._id} img={data.images[0]} title={data.name} price={data.price} time={data.time} status={data.status} desc={data.description} cond={data.condition}/></a>
+        return data.status!=='Complete' && <a href={`/card-det/${data._id}/${email}`}><Card key={data._id} id={data._id} img={data.imageUrl} title={data.name} price={data.price} time={data.time} status={data.status} desc={data.description} cond={data.condition}/></a>
 
     })
 
@@ -54,7 +54,7 @@ return(
 
 <div>
   <Header />
-  <br></br><br></br><br></br><br></br>
+  
 <div className="cards">
 
 { Card_ele}

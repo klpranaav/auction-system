@@ -13,7 +13,7 @@ function Profile() {
   let phone = '';
   let id = '';
   useEffect(() => {
-    const url1 = "https://auction-backed.vercel.app/backend/user-details/" + email;
+    const url1 = "https://server3-rho.vercel.app/backend/user-details/" + email;
     Axios.get(url1)
       .then((res) => {
         if (res.status === 200) {

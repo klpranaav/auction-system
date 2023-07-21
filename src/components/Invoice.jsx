@@ -9,7 +9,7 @@ export const Invoice = () => {
   const [data, setData] = useState([]);
   const {item} = useParams();
   useEffect(() => {
-    const url1 = "https://auction-backed.vercel.app/backend/user-details/" + email;
+    const url1 = "https://server3-rho.vercel.app/backend/user-details/" + email;
     Axios.get(url1)
       .then((res) => {
         if (res.status === 200) {
@@ -19,6 +19,7 @@ export const Invoice = () => {
         }
       })
       .catch((err) => alert(err));
+    
   }, []);
 
   

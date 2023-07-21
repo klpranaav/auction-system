@@ -13,7 +13,7 @@ export default function Card(props)
 
         try{
 
-            const url = "https://auction-backed.vercel.app/backend/getauc/"+props.id;
+            const url = "https://server3-rho.vercel.app/backend/getauc/"+props.id;
            
            const upd_obj = {status:"Ongoing"}
            await Axios.put(url,upd_obj).then((res)=>{
@@ -50,7 +50,7 @@ export default function Card(props)
 
         try{
 
-            const url2 = "https://auction-backed.vercel.app/backend/getauc/"+props.id;
+            const url2 = "https://server3-rho.vercel.app/backend/getauc/"+props.id;
            
            const upd_obj2 = {status:"Complete"}
           await Axios.put(url2,upd_obj2).then((res)=>{

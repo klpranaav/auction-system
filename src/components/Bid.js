@@ -23,7 +23,7 @@ export default function Bid()
     {
 
        
-        const url = "https://auction-backed.vercel.app/backend/get_det/"+id;
+        const url = "https://server3-rho.vercel.app/backend/get_det/"+id;
 
         Axios.get(url).then((res)=>{
 
@@ -45,7 +45,7 @@ export default function Bid()
 
     const cr_req = async() => {
 
-        const url_cr = "https://auction-backed.vercel.app/backend/create-cart/";
+        const url_cr = "https://server3-rho.vercel.app/backend/create-cart/";
 
         const c_det = {buyer:email,price:dat.price,name:dat.name};
         
@@ -76,7 +76,7 @@ export default function Bid()
 
         try{
 
-            const url = "https://auction-backed.vercel.app/backend/getauc/"+dat.id;
+            const url = "https://server3-rho.vercel.app/backend/getauc/"+dat.id;
            
            const upd_obj = {status:"Ongoing"}
            await Axios.put(url,upd_obj).then((res)=>{
@@ -114,7 +114,7 @@ export default function Bid()
 
         try{
 
-            const url2 = "https://auction-backed.vercel.app/backend/getauc/"+dat.id;
+            const url2 = "https://server3-rho.vercel.app/backend/getauc/"+dat.id;
            
            const upd_obj2 = {status:"Complete"}
           await Axios.put(url2,upd_obj2).then((res)=>{
@@ -218,7 +218,7 @@ export default function Bid()
 
    const handleClick = async() =>{
 
-    const url_amt = "https://auction-backed.vercel.app/backend/get_amt/"+id;
+    const url_amt = "https://server3-rho.vercel.app/backend/get_amt/"+id;
 
     Axios.get(url_amt).then((res)=>{
 
@@ -229,7 +229,7 @@ export default function Bid()
 
     if(amt>dat.price && sts!="Complete")
     {
-        const url_upd_amt = "https://auction-backed.vercel.app/backend/upd-amt/"+id;
+        const url_upd_amt = "https://server3-rho.vercel.app/backend/upd-amt/"+id;
 
         const upd_price = {price:amt,buyer:email};
 
@@ -288,7 +288,7 @@ return(
         <Header />
         <br></br><br></br>
     <div className="__card st" >
-        <img src={dat.image} alt="img" />
+        <img src={dat.imageUrl} alt="img" />
         <span className="cont--header">{dat.name}</span>
         <span className="cont">Price: $ {dat.price} </span>
         <span className="cont">  Time Remaining: {timer} </span>

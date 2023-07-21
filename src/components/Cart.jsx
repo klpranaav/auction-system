@@ -14,8 +14,8 @@ export const Cart = (props) => {
   console.log(email);
   //const emailToFind = email;
   useEffect(() => {
-    const url = "https://auction-backed.vercel.app/backend/cart/" + email;
-    //`https://auction-backed.vercel.app/backend/cart?email=${emailToFind}
+    const url = "https://server3-rho.vercel.app/backend/cart/" + email;
+    //`https://server3-rho.vercel.app/backend/cart?email=${emailToFind}
     Axios.get(url)
       .then((res) => {
         if (res.status === 200) {

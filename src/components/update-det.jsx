@@ -15,7 +15,7 @@ const [data, setData] = useState([]);
   const {phone} = useParams();
   const history = useNavigate();
   const handleSubmit = () => {
-    const url = "https://auction-backed.vercel.app/backend/update/" + id;
+    const url = "https://server3-rho.vercel.app/backend/update/" + id;
     const rurl = "/home/" + email;
     const updatedObj = {name:upname,email:upemail,mobNo:upphone};
     Axios.put(url,updatedObj)

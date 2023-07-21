@@ -42,11 +42,13 @@ function AddProducts(){
   }
   
 
+  //https://server1-git-main-sivaadithya.vercel.app/
+  //https://server1-two.vercel.app/
 
   async function submit(e){
       e.preventDefault();
       try{
-          await axios.post("https://auction-backed.vercel.app/addproduct",formData, {
+          await axios.post("https://server3-rho.vercel.app/addproduct",formData, {
             headers: {
               "Content-Type": "multipart/form-data"
             },

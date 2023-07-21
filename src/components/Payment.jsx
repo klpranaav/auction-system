@@ -24,7 +24,7 @@ export const Payment = () => {
     const [resData, setResData] = useState([]);
 
     useEffect(() => {
-        const url = "https://auction-backed.vercel.app/backend/card";
+        const url = "https://server3-rho.vercel.app/backend/card";
         Axios.get(url)
         .then((res) => {
             if (res.status === 200) {
@@ -75,6 +75,17 @@ export const Payment = () => {
                 {
                     if(val.expiration === d && val.cvv === cvv)
                     {
+                        const url1 = "https://server3-rho.vercel.app/backend/del/" + id;
+                        Axios.delete(url1)
+                        .then((res) => {
+                            if (res.status === 200) {
+                            console.log("Deleted successfully");
+                            console.log(res.data);
+                            } else {
+                            Promise.reject();
+                            }
+                        })
+                        .catch((err) => alert(err.message));
                         setUrl('/invoice/' + amount + "/" + id + "/" + item + "/" + email);
                     }
                     else
