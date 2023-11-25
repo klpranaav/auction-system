@@ -125,17 +125,6 @@ export default function Card(props)
     }
  
     const clearTimer = (e) => {
- 
-        // If you adjust it you should also need to
-        // adjust the Endtime formula we are about
-        // to code next   
-        
-     
-     //setTimer("HH:MM:SS");
- 
-        // If you try to remove this line the
-        // updating of timer Variable will be
-        // after 1000ms or 1sec
 
    
 

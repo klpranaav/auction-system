@@ -40,10 +40,7 @@ function AddProducts(){
   for (let i = 0; i < images.length; i++) {
     formData.append('images', images[i]);
   }
-  
 
-  //https://server1-git-main-sivaadithya.vercel.app/
-  //https://server1-two.vercel.app/
 
   async function submit(e){
       e.preventDefault();
@@ -130,7 +127,7 @@ function AddProducts(){
             </option>
             <option value='Electronics'>Electronics</option>
             <option value='Mobile and Accessories'>Mobile and Accessories</option>
-            <option value='Jewellery'>Jewellery</option>
+            <option value='Jewel'>Jewel</option>
             <option value='Antique'>Antique</option>
             <option value='Furniture'>Furniture</option>
             <option value='Computer Parts'>Computer Parts</option>

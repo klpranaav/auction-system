@@ -22,12 +22,12 @@ export default function Cards()
 
             if(res.status===200)
             {
-                console.log("Response receiv")
+                console.log("Response received")
                 setData(res.data);
             }
             else{
 
-                console.log("Response not receiv")
+                console.log("Response not received")
                 Promise.reject();
             }
 
